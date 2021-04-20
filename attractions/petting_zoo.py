@@ -13,7 +13,7 @@ class PettingZoo(Attraction):
                 self.animals.append(animal)
                 print(f"{animal} now lives in {self.attraction_name}")
         except AttributeError as ex:
-            print(f'{animal} doesn\'t like to be petted, so please do not put it in the {self.name} attraction.')
+            print(f'{animal} doesn\'t like to be petted, so please do not put it in the {self.attraction_name} attraction.')
 
     # Number 2: Actual typing check
     def add_animal_type_check(self, animal):
@@ -21,4 +21,4 @@ class PettingZoo(Attraction):
             self.animals.append(animal)
             print(f"{animal} now lives in {self.attraction_name}")
         else:
-            print(f'{animal} doesn\'t like to be petted, so please do not try to put it in the {self.name} attraction.')
+            print(f'{animal} doesn\'t like to be petted, so please do not try to put it in the {self.attraction_name} attraction.')

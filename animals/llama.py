@@ -8,3 +8,6 @@ class Llama(Animal):
         super().__init__(name, species, food, chip_num)
         self.shift = shift # stays on Llama because not all animals have shifts
         self.walking = True
+
+    def __str__(self):
+        return f'{self.name} the llama'
