@@ -12,3 +12,6 @@ snappy = Alligator("Snappy", "American Alligator", "fish", 1044)
 varmint_village.add_animal_pythonic(dolly)
 varmint_village.add_animal_type_check(dolly)
 varmint_village.add_animal_pythonic(snappy)
+
+for animal in varmint_village.animals:
+    print(animal)
